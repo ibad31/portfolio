@@ -1,0 +1,209 @@
+
+
+header img{
+    
+    border-radius: 50%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+
+}
+header img:hover{
+    transform: translateY(-20px);
+}
+
+header .btn-outline-warning{
+    border-radius: 10px;
+}
+header ul li:hover{
+    color: yellow;    
+}
+
+
+
+
+
+
+
+
+/* Profile Section */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 50px;
+}
+
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #000;
+}
+
+/* Heading Animation */
+.profile-heading {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideDown 1s ease-out forwards;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+/* Navbar Animation */
+.navbar {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Navbar Links Animation */
+.nav-item {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInLeft 2s forwards;
+}
+
+.nav-item:nth-child(even) {
+    transform: translateX(50px);
+    animation: slideInRight 2s forwards;
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Navbar Button Animation */
+.nav-link {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.nav-link:hover {
+    transform: scale(1.1);
+    color: #ff5733 !important;
+}
+
+/* Loading Animation */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: -100%;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ff5733);
+    animation: loadingEffect 2s infinite;
+}
+
+@keyframes loadingEffect {
+    0% {
+        left: -100%;
+    }
+    50% {
+        left: 50%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+.active{
+    background-color: #FFC107 !important;
+}
+.dropdown-menu .nav-link{
+ color: black !important;
+}
+div h5{
+    color: white;
+}
+
+
+.navbar-nav a:hover{
+    color: #FFC107;
+}
+section li{
+    list-style-type: none;
+
+}
+section ul i{
+    color: #FFC107;
+}
+section img{
+    
+        border-radius: 50%;
+        /* height: 200px; */
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+    
+}
+section img:hover{
+    transform: translateY(-20px);
+
+}
+section .btn{
+    border: 1px solid black;
+}
+main{
+    height: auto;
+}
+main .card{
+    margin-top: 20px;
+}
+article{
+    margin-top: 100px;
+    height: auto;
+    padding-block: 100px;
+}
+
+article .card img{
+    height: 200px;
+}
+
+
+
